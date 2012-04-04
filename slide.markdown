@@ -1,4 +1,4 @@
-2012年のプレゼンはgithub Pages + markdown2impressで決まり
+2012年のプレゼンはgithub Pages + markdown2impressで決まり!!
 ==========
 2012-04-04  
 @glidenote
