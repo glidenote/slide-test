@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress.css" rel="stylesheet" />
+</head>
+<body>
+<div id="impress" class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+    </div>
+
+<div id="title" class="step" data-y="0" data-x="0">
+<h1>2012年のプレゼンはgithub Pages + markdown2impressで決まり</h1>
+
+<p>2012-04-04 <br />
+@glidenote</p>
+
+</div>
+<div class="step" data-y="0" data-x="1200">
+<h2>プレゼン作成に使用するソフト</h2>
+
+<p>下記ソフトを事前に導入</p>
+
+<ul>
+<li><a href="https://github.com/yoshiki/markdown2impress">yoshiki/markdown2impress</a></li>
+<li><a href="https://github.com/defunkt/hub">defunkt/hub</a></li>
+<li><a href="https://github.com/glidenote/hub-zsh-completion">glidenote/hub-zsh-completion</a></li>
+</ul>
+
+<p>拙作の<code>hub-zsh-completion</code>は無くても作業は出来ます。</p>
+
+</div>
+<div class="step" data-y="0" data-x="2400">
+<h2>markdownで下書きを作成</h2>
+
+<ul>
+<li>作業用ディレクトリを作成</li>
+<li>その中にmarkdown形式でプレゼンの下書きを用意</li>
+</ul>
+
+</div>
+<div class="step" data-y="0" data-x="3600">
+<h2>markdown2impressで変換</h2>
+
+<ul>
+<li>下書きを<code>markdown2impress</code>でindex.htmlに変換</li>
+<li>css,jsも合わせて生成される</li>
+</ul>
+
+</div>
+<div class="step" data-y="0" data-x="4800">
+<h2>hub(git) createでリポジトリを作成</h2>
+
+<ul>
+<li>hubコマンドを利用して、githubにリポジトリを作成</li>
+<li>ブラウザからリポジトリを作成してもOK</li>
+<li>hub-zsh-completionを利用していれば<code>git create</code></li>
+</ul>
+
+</div>
+<div class="step" data-y="800" data-x="0">
+<h2>gh-pagesブランチを作成してpush</h2>
+
+<ul>
+<li>github pagesを利用するために、<code>gh-pages</code>というブランチを用意</li>
+<li>更新作業や編集作業は<code>maser</code>ではなく<code>gh-pages</code>で行う</li>
+<li>できあがったら<code>git push origin gh-pages</code>でpush</li>
+</ul>
+
+</div>
+<div class="step" data-y="800" data-x="1200">
+<h2>github pagesの表示確認</h2>
+
+<ul>
+<li>http://username.github.com/reponame という形式でページができあがる</li>
+<li>ブラウザで動作の確認</li>
+</ul>
+
+</div>
+<div class="step" data-y="800" data-x="2400">
+<h2>まとめ</h2>
+
+<ul>
+<li>ブラウザでの表示確認以外は全部コマンドラインで行える</li>
+<li>プレゼン資料がmarkdownで書ける</li>
+<li>markdownを覚えないと利用出来ない</li>
+</ul>
+
+</div>
+<div class="step" data-y="800" data-x="3600">
+<h2>と、こんな感じのことがサクサクと出来ます</h2>
+
+</div>
+
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+
+</body>
+</html>
+
